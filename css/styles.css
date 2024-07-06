@@ -477,6 +477,14 @@ input[type="checkbox"] {
     transition: all 0.2s ease;
 }
 
+.nav-drop{
+    display: block;
+    margin:0 10px 0 10px;
+    text-decoration: none;
+    line-height: 0.875rem;
+    transition: all 0.2s ease;
+}
+
 .dropdown-toggle {
     white-space: nowrap;
 }

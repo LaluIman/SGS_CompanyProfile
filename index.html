@@ -31,13 +31,57 @@
 
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png" />
-    </head>
 
+        <style>
+            .done {
+            display: none;
+            }
+            #loading {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                background-color: rgb(255, 255, 255); /* Optional: To give a translucent background */
+                transition: opacity 1s ease-out;
+            }
+            #loading.fade-out {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    
     <body data-spy="scroll" data-target=".fixed-top">
+
+    <div id="loading" class="flex justify-center items-center h-screen">
+        <div class="flex items-center justify-center h-screen">
+            <div class="relative">
+                <div class="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"></div>
+                <div class="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin">
+                </div>
+            </div>
+        </div>
+
+        <script>
+             // Function to show the main content and hide the loading animation
+        function showContent() {
+            const loadingDiv = document.getElementById('loading');
+            loadingDiv.classList.add('fade-out');
+            setTimeout(() => {
+                loadingDiv.classList.add('done');
+                document.getElementById('content').classList.remove('done');
+            }, 1000); // Match this duration with the CSS transition duration
+        }
+
+        // Show the content when the page has fully loaded
+        window.onload = showContent;
+        </script>
+    </div>
 
         <!-- Navigation -->
         <nav class="navbar fixed-top ">
-            <div class="sm:px-10 flex flex-wrap items-center justify-between lg:flex-nowrap shadow-sm">
+            <div class="sm:px-10 flex flex-wrap items-center justify-between lg:flex-nowrap border-b pb-2">
                 <!-- Image Logo -->
                 <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
                     <img src="images/Logo (1).png" alt="alternative" class="h-10" />
@@ -56,7 +100,7 @@
                             <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="#tentang">Tentang</a>
                         </li>
                         <li>
-                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="nav-link text-xl md:text-lg font-semibold py-10 p-5 md:py-4" type="button">Layanan </button>
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="nav-drop text-2xl md:text-lg font-semibold py-10 p-5 md:py-4" type="button">Layanan </button>
                                 <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
                                     <li>
@@ -75,7 +119,7 @@
                             <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="#akreditasi">Akreditasi</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-blue-500 hover:bg-white hover:shadow-xl py-7 md:px-10 md:py-4 bg-blue-500 rounded-full text-white" href="#kontak">Kontak  <i class="fas fa-phone ml-2"></i> </a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-blue-500 md:hover:bg-white md:hover:shadow-xl py-7 md:px-10 md:py-4 md:bg-blue-500 rounded-full md:text-white" href="#kontak">Kontak  <i class="fas fa-phone ml-2"></i> </a>
                         </li>
                     </ul>
                 </div> <!-- end of navbar-collapse -->
@@ -92,7 +136,7 @@
                       <div class="w-full">
                         <h1 class="text-4xl md:text-6xl font-bold">PT SINERGI GLOBAL SERTIFIKASI</h1>
                         <div class="w-20 h-2 bg-blue-500 my-4"></div>
-                        <p class="text-sm md:text-xl mb-10">PT Sinergi Global Sertifikasi (SGS Certification) adalah penyedia layanan sertifikasi dan pelatihan ISO, CE Marking, GMP, FDA, SMK3, SNI, NKV, dan lainnya. Didirikan pada 2023, kami fokus pada pelayanan berkualitas dan bekerja sama dengan lembaga akreditasi internasional untuk memenuhi kebutuhan klien.</p>
+                        <p class="text-lg md:text-xl mb-10">PT Sinergi Global Sertifikasi (SGS Certification) adalah penyedia layanan sertifikasi dan pelatihan ISO, CE Marking, GMP, FDA, SMK3, SNI, NKV, dan lainnya. Didirikan pada 2023, kami fokus pada pelayanan berkualitas dan bekerja sama dengan lembaga akreditasi internasional untuk memenuhi kebutuhan klien.</p>
                       </div>
                     </header>
                   </div>
@@ -110,10 +154,10 @@
             <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                     <div class="max-w-lg">
-                        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl"><span class="text-white bg-blue-500">Tentang</span> Kami</h2>
+                        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl px-2"><span class="text-white bg-blue-500">Tentang</span> Kami</h2>
                         <p class="mt-4 text-gray-600 text-lg">PT Sinergi Global Sertifikasi (SGS Certification) adalah lembaga sertifikasi dan pelatihan ISO yang berdiri sejak 2023, menawarkan berbagai skema sertifikasi termasuk ISO, CE Marking, GMP, FDA, SMK3, SNI, NKV, dan lainnya. Kami berfokus pada pelayanan berkualitas dan telah berkolaborasi dengan berbagai lembaga akreditasi internasional untuk memenuhi kebutuhan klien.</p>
                         <div class="mt-8">
-                            <a href="tentang.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">pelajari lebih lanjut tentang kami
+                            <a href="tentang.html" class="text-base text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500 hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -136,7 +180,7 @@
                         <h2 class="mb-6 md:text-5xl"><span class="text-blue-500 font-black">> </span>Konsultasi</h2>
                         <p class="mb-4 text-lg">Konsultan ahli SGS Certification akan melakukan pendampingan secara intensif kepada para klien mulai dari proses pendaftaran sampai dengan lulus sertifikasi</p>
                         <div class="mt-5">
-                            <a href="konsultasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya tentang konsultasi
+                            <a href="konsultasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -199,7 +243,7 @@
                             </li>
                         </ul>
                         <div class="mt-5">
-                            <a href="sertifikasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya tentang sertifikasi
+                            <a href="sertifikasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya 
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -217,7 +261,7 @@
                         <h2 class="mb-6 md:text-5xl"><span class="text-blue-500 font-black">> </span>Training</h2>
                         <p class="mb-4 text-lg">Program training yang kami tawarkan tersedia dalam bentuk pelatihan online maupun offline yang secara keseluruhan bermanfaat untuk memenuhi kebutuhan klien dalam rangka menambah wawasan</p>
                         <div class="mt-5">
-                            <a href="training.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya tentang training
+                            <a href="training.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
