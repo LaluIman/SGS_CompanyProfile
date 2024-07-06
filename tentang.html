@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <!-- SEO Meta Tags -->
-        <meta name="description" content="Pavo is a mobile app Tailwind CSS HTML template created to help you present benefits, features and information about mobile apps in order to convince visitors to download them" />
-        <meta name="author" content="Your name" />
+        <meta name="description" content="Menjamin Kualitas dan Kepercayaan: Bertumbuh Bersama dalam Menerapkan Standar ISO di Indonesia." />
 
         <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
         <meta property="og:site_name" content="" /> <!-- website name -->
@@ -15,10 +14,9 @@
         <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
         <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
         <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-        <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Article Details - Pavo</title>
+        <title>Sinergi Global Sertifikasi</title>
 
         <!-- Styles -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -28,134 +26,169 @@
         <link href="css/swiper.css" rel="stylesheet" />
         <link href="css/magnific-popup.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="src/output.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png" />
     </head>
+
     <body data-spy="scroll" data-target=".fixed-top">
 
         <!-- Navigation -->
-        <nav class="navbar fixed-top">
-            <div class="container flex flex-wrap items-center justify-between sm:px-4 lg:flex-nowrap lg:px-8">
-
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!--<a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a>-->
-
+        <nav class="navbar fixed-top ">
+            <div class="sm:px-10 flex flex-wrap items-center justify-between lg:flex-nowrap shadow-sm">
                 <!-- Image Logo -->
                 <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
-                    <img src="images/logo.svg" alt="alternative" class="h-8"/>
+                    <img src="images/Logo (1).png" alt="alternative" class="h-10" />
                 </a>
 
-                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
+                <button class="background-white rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
                 </button>
 
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                         <li>
-                            <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4 " href="index.html#beranda">Beranda</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="index.html#features">Features</a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="index.html#tentang">Tentang</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="index.html#details">Details</a>
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="nav-link text-2xl md:text-lg font-semibold py-10 p-5 md:py-4" type="button">Layanan </button>
+                                <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                    <li>
+                                        <a href="konsultasi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Konsultasi</a>
+                                    </li>
+                                    <li>
+                                        <a href="sertifikasi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sertifikasi</a>
+                                    </li>
+                                    <li>
+                                        <a href="training.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Training</a>
+                                    </li>
+                                    </ul>
+                                </div>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                            </div>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="index.html#akreditasi">Akreditasi</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="index.html#download">Download</a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-blue-500 md:hover:bg-white md:hover:shadow-xl py-7 md:px-10 md:py-4 md:bg-blue-500 rounded-full md:text-white" href="index.html#kontak">Kontak  <i class="fas fa-phone "></i> </a>
                         </li>
                     </ul>
-                    <span class="block lg:ml-3.5">
-                        <a class="no-underline" href="#your-link">
-                            <i class="fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5"></i>
-                        </a>
-                        <a class="no-underline" href="#your-link">
-                            <i class="fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200"></i>
-                        </a>
-                    </span>
                 </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
 
+        <!-- home -->
+        <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
+            <div class=" absolute top-0 left-0 w-full h-full overflow-hidden">
+               <img src="images/Screenshot 2024-07-06 at 15.23.44.png" class="min-w-full min-h-full absolute object-cover" style="filter: brightness(50%);" alt="">
+            </div>
+            <div class="space-y-2 z-10">
+                <h3 class="font-semibold text-2xl text-white md:text-4xl">Tentang</h3>
+                <h1 class="font-bold text-2xl text-white bg-blue-500 md:text-6xl">PT SINERGI GLOBAL SERTIFIKASI</h1>
+            </div>
+        </section>
+        <!-- home  -->
+
+        <!-- about -->
+        <section class="py-24">
+            <div class="flex pt-12 px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden">
+                <div class="flex flex-col  gap-6 md:flex-row items-center max-w-8xl">
+                    <div class="w-full md:w-1/2 lg:pr-32">
+                        <h2 class="text-2xl font-bold lg:text-5xl text-center md:text-left text-blue-500 leading-tight">Perkenalan tentang perusahaan kami</h2>
+                        <h3
+                            class="mt-6 md:mt-10 text-sm lg:text-base text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed">SGS Certification, didirikan 2023, adalah lembaga sertifikasi & pelatihan ISO dengan layanan skema sertifikasi ISO, CE Marking, GMP, dan lainnya. Menawarkan layanan berkualitas, pengalaman sejak 2016, dan kerjasama dengan lisensi akreditasi internasional. Visi untuk memberikan nilai tambah melalui layanan sertifikasi & pelatihan berkualitas. Misi adalah menjadi lembaga terkemuka di Indonesia dengan pelayanan berkualitas & biaya kompetitif.</h3>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                        <img src="images/tentanghero.jpg" class="rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+
+        <!-- moto -->
+        <section>
+            <div class="max-w-3xl mx-auto text-center mt-12">
+                <h1 class="text-4xl font-bold text-gray-900 leading-tight mb-5 md:text-6xl">
+                  Our <span class="bg-blue-500 text-white">Motto</span>
+                </h1>
+                <p class="text-sm m-10 text-gray-800 mb-8 m-1 md:text-xl">Moto yang kami miliki mencerminkan tekad perusahaan untuk menjaga kualitas dalam setiap aspek layanan sertifikasi maupun pelatihan ISO. Kami berkomitmen untuk memberikan layanan yang transparan, adil dan tepercaya agar dapat berkontribusi dalam peningkatan kualitas industri di Indonesia.</p>
+              </div>
+        </section>
+        <!-- moto -->
+
+        <!-- visi misi -->
+        <section class="py-24">
+            <div class="p-5 pt-8">
+                <!-- card -->
+                <div class="max-w-5xl mx-auto">
+                    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 not-prose">
+                        <!-- card -->
+                        <a href="#" target="_blank"
+                            class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group">
+                            <span class="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                            <div class="flex items-center justify-between w-full mb-4 ">
+                                <h1 class="font-bold text-2xl text-blue-500 relative h-5 md:h-6">> VISI</h1>
+                                </span>
+                            </div>
+                            <span class="relative md:bottom-16 text-xs md:text-sm text-gray-600 dark:text-gray-400">Menjadi lembaga sertifikasi dan pelatihan ISO terbaik dengan layanan yang profesional dan tepercaya.</span>
+                        </a>
+                        <!-- card -->
+                        <a href="#" target="_blank"
+                            class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group">
+                            <span class="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                            <div class="flex items-center justify-between w-full mb-4 ">
+                                <h1 class="font-bold text-2xl text-blue-500 relative h-5 md:h-6">> MISI</h1>
+                                </span>
+                            </div>
+                            <span class="relative text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                                <ul>
+                                    <li class="mb-1">
+                                        <span class="text-blue-500 font-bold text-sm">1.</span> Memberikan layanan proses yang cepat dan mudah dengan biaya yang terjangkau
+                                    </li>
+                                    <li class="mb-1">
+                                        <span class="text-blue-500 font-bold text-sm">2.</span> Membantu para profesional maupun usahawan dalam memajukan perusahaan
+                                    </li>
+                                    <li class="mb-1">
+                                        <span class="text-blue-500 font-bold text-sm">3.</span> Memberikan layanan terbaik sesuai dengan etika bisnis
+                                    </li>
+                                </ul>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Footer -->
+         <footer class="w-full">
+            <div class="mx-auto bg-gray-100 max-w-7xl px-4 sm:px-6 lg:px-8">
+                <!--Grid-->
+                <div class="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
+                    <img src="images/Logo (1).png" class="flex justify-center" width="150" height="150" alt="">
+                </div>
+                <!--Grid-->
+                <div class="py-7 border-t border-gray-700">
+                    <div class="flex items-center justify-center">
+                        <span class="text-gray-400 "><a href="#">©️ sinergiglobalsertifikasi</a>| All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 
         
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container px-4 sm:px-8">
-                <h4 class="mb-8 lg:max-w-3xl lg:mx-auto">Pavo is a mobile application for marketing automation and you can reach the team at <a class="text-indigo-600 hover:text-gray-500" href="mailto:email@domain.com">email@domain.com</a>
-                </h4>
-                <div class="social-container">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-instagram fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-youtube fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </div> <!-- end of social-container -->
-            </div> <!-- end of container -->
-        </div> <!-- end of footer -->
-        <!-- end of footer -->
-
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
-                <ul class="mb-4 list-unstyled p-small">
-                    <li class="mb-2"><a href="article.html">Article Details</a></li>
-                    <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
-                    <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-                <p class="pb-2 p-small statement">Copyright © <a href="#your-link" class="no-underline">Your name</a></p>
-
-                <p class="pb-2 p-small statement">Distributed by :<a href="https://themewagon.com/" class="no-underline">Themewagon</a></p>
-            </div> 
-        </div> <!-- end of copyright -->
-        <!-- end of copyright -->
-
-        <!-- Scripts -->
         <script src="js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
         <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     </body>
 </html>
