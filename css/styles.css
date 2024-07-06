@@ -30,7 +30,9 @@ Colors:
 /*     General Styles     */
 /**************************/
 
-
+body{
+    padding-top:20px;
+}
 
 body,
 p {
