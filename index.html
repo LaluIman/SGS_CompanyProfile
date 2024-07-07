@@ -44,7 +44,7 @@
                 height: 100%;
                 z-index: 99999;
                 background-color: rgb(255, 255, 255); /* Optional: To give a translucent background */
-                transition: opacity 1s ease-out;
+                transition: opacity 0.1s ease-out;
             }
             #loading.fade-out {
                 opacity: 0;
@@ -97,20 +97,20 @@
                             <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4 " href="#beranda">Beranda</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="#tentang">Tentang</a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="tentang.html">Tentang</a>
                         </li>
                         <li>
-                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="nav-drop text-2xl md:text-lg font-semibold py-10 p-5 md:py-4" type="button">Layanan </button>
-                                <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="nav-drop text-2xl md:text-lg font-semibold py-10 p-5 md:py-4" type="button">Layanan <i class='bx bxs-down-arrow'></i></button>
+                                <div id="dropdownHover" class="z-10 ml-7 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class=" py-2 px-7 text-lg  text-gray-700" aria-labelledby="dropdownHoverButton">
                                     <li>
-                                        <a href="konsultasi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Konsultasi</a>
+                                        <a href="konsultasi.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-yellow-500 transition-all">Konsultasi</a>
                                     </li>
                                     <li>
-                                        <a href="sertifikasi.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sertifikasi</a>
+                                        <a href="sertifikasi.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-yellow-500 transition-all">Sertifikasi</a>
                                     </li>
                                     <li>
-                                        <a href="training.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Training</a>
+                                        <a href="training.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-yellow-500 transition-all">Training</a>
                                     </li>
                                     </ul>
                                 </div>
@@ -119,7 +119,7 @@
                             <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="#akreditasi">Akreditasi</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-blue-500 md:hover:bg-white md:hover:shadow-xl py-7 md:px-10 md:py-4 md:bg-blue-500 rounded-full md:text-white" href="#kontak">Kontak  <i class="fas fa-phone ml-2"></i> </a>
+                            <a class="nav-link page-scroll text-2xl px-5 py-7 md:text-base hover:text-blue-500 md:hover:bg-white md:hover:shadow-xl md:px-10 md:py-4 md:bg-blue-500 rounded-full md:text-white" href="#kontak">Kontak  <i class="fas fa-phone ml-2"></i> </a>
                         </li>
                     </ul>
                 </div> <!-- end of navbar-collapse -->
@@ -154,10 +154,10 @@
             <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                     <div class="max-w-lg">
-                        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl px-2"><span class="text-white bg-blue-500">Tentang</span> Kami</h2>
+                        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-4xl"><span class="text-white bg-blue-500 px-2">Tentang</span> Kami</h2>
                         <p class="mt-4 text-gray-600 text-lg">PT Sinergi Global Sertifikasi (SGS Certification) adalah lembaga sertifikasi dan pelatihan ISO yang berdiri sejak 2023, menawarkan berbagai skema sertifikasi termasuk ISO, CE Marking, GMP, FDA, SMK3, SNI, NKV, dan lainnya. Kami berfokus pada pelayanan berkualitas dan telah berkolaborasi dengan berbagai lembaga akreditasi internasional untuk memenuhi kebutuhan klien.</p>
                         <div class="mt-8">
-                            <a href="tentang.html" class="text-base text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500 hover:bg-white font-medium rounded-full">Selengkapnya
+                            <a href="tentang.html" class="text-base text-white bg-blue-500 p-3 transition-all ease-in-out hover:text-blue-500 hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                         <h2 class="mb-6 md:text-5xl"><span class="text-blue-500 font-black">> </span>Konsultasi</h2>
                         <p class="mb-4 text-lg">Konsultan ahli SGS Certification akan melakukan pendampingan secara intensif kepada para klien mulai dari proses pendaftaran sampai dengan lulus sertifikasi</p>
                         <div class="mt-5">
-                            <a href="konsultasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
+                            <a href="konsultasi.html" class="text-white bg-blue-500 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -243,7 +243,7 @@
                             </li>
                         </ul>
                         <div class="mt-5">
-                            <a href="sertifikasi.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya 
+                            <a href="sertifikasi.html" class="text-white bg-blue-500 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya 
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                         <h2 class="mb-6 md:text-5xl"><span class="text-blue-500 font-black">> </span>Training</h2>
                         <p class="mb-4 text-lg">Program training yang kami tawarkan tersedia dalam bentuk pelatihan online maupun offline yang secara keseluruhan bermanfaat untuk memenuhi kebutuhan klien dalam rangka menambah wawasan</p>
                         <div class="mt-5">
-                            <a href="training.html" class="text-white bg-blue-600 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
+                            <a href="training.html" class="text-white bg-blue-500 p-3 transition-all ease-in-out hover:text-blue-500  text-base hover:bg-white font-medium rounded-full">Selengkapnya
                                 <span class="ml-2">&#8594;</span></a>
                         </div>
                     </div>
@@ -357,7 +357,7 @@
         <!-- akreditasi -->
         <section class="py-24" id="akreditasi">
             <div class="mb-11 text-center">
-                <h2 class="overflow-hidden mb-5 text-2xl font-black text-blue-500 lg:text-4xl">Akreditasi Internasional</span></h2>
+                <h2 class="overflow-hidden mb-5 text-2xl font-black text-black lg:text-4xl">Akreditasi Internasional</span></h2>
                 <p class="text-xs mx-2 md:p-4 md:text-base">  KAN - ID | UKAS-UK | JAZ-ANZ-AUS |
                   IAS - US | IASCB-UK|ASCB-UK | UAF-USA
                   KAB-Korea | EGAC-Mesir | AACB - Australia | IAF
@@ -437,53 +437,53 @@
             <div class="container p-8 mx-auto w-full max-w-4xl xl:px-0">
                 <div class="flex flex-col justify-center">
                     <div class="text-center py-6">
-                        <h2 class="overflow-hidden mb-5 text-2xl font-black text-blue-500 lg:text-4xl">Telah di <span class="bg-blue-500 text-white px-2">percayai</span> banyak Perusahaan</h2>
+                        <h2 class="overflow-hidden mb-5 text-2xl font-black text-black lg:text-4xl">Telah <span class="bg-blue-500 text-white px-2">dipercayai</span> banyak Perusahaan</h2>
                     </div>
-                    <div class="grid grid-cols-2 md:grid-cols-5 justify-center gap-4 mt-10 md:justify-around">
+                    <div class="grid grid-cols-2 md:grid-cols-5 justify-center gap-4 mt-10 ">
                         <div class="pt-2">
-                            <img src="images/company/company 1.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 1.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 2.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 2.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 3.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 3.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 4.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 4.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 5.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 5.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 6.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 6.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 7.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 7.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 8.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 8.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 9.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 9.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 10.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 10.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 11.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 11.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 12.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 12.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 13.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 13.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 14.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 14.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                         <div class="pt-2">
-                            <img src="images/company/company 15.png" width="100" height="100" class="shadow-lg rounded-xl" alt="">
+                            <img src="images/company/company 15.png" width="150" height="150" class="shadow-lg rounded-xl" alt="">
                         </div>
                     </div>
                 </div>
@@ -495,7 +495,7 @@
         <section class="bg-white py-24">
             <div class="container mx-auto">
                 <div class="text-center py-6">
-                    <h2 class="overflow-hidden mb-5 text-2xl font-black text-blue-500 lg:text-4xl">Apa kata <span class="bg-blue-500 text-white px-2">Klien</span> kami?</h2>
+                    <h2 class="overflow-hidden mb-5 text-2xl font-black text-black lg:text-4xl">Apa kata <span class="bg-blue-500 text-white px-2">Klien</span> kami?</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 gap-4">
@@ -601,7 +601,7 @@
             <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
                     <div class="text-center">
-                        <h2 class="overflow-hidden  text-2xl font-black text-blue-500 lg:text-4xl">Kontak <span class="bg-blue-500 text-white">Kami</span></h2>
+                        <h2 class="overflow-hidden  text-2xl font-black text-black lg:text-4xl">Kontak <span class="bg-blue-500 text-white">Kami</span></h2>
                     </div>
                 </div>
                 <div class="mt-16 lg:mt-20">
@@ -614,14 +614,14 @@
                         <div>
                             <div class="max-w-full mx-auto rounded-lg overflow-hidden">
                                 <div class="px-6 py-4">
-                                    <h3 class="text-xl text-blue-500 font-bold">> Alamat Perusahaan </h3>
-                                    <p class="mt-1 text-gray-600 text-lg"><span class="font-semibold">Hybrid Office</span>  - Virtual Office Depok
+                                    <h3 class="text-2xl text-blue-500 font-bold">> Alamat Perusahaan </h3>
+                                    <p class="mt-1 text-gray-600 text-xl"><span class="font-semibold">Hybrid Office</span>  - Virtual Office Depok
                                         Jl. Raya Tapos No.57, Tapos, Kec. Tapos, Kota Depok, Jawa Barat 16457</p>
                                 </div>
                                 <div class=" px-6 py-4">
-                                    <h3 class="text-xl text-blue-500 font-bold">> kontak</h3>
-                                    <p class="mt-1 text-gray-600 text-lg"><i class='bx bxl-gmail text-red-500' ></i> Email: sinergiglobalsertifikasi@gmail.com</p>
-                                    <p class="mt-1 text-gray-600 text-lg"><i class='bx bxl-whatsapp text-green-500'></i> Whatsapp: 081280007675</p>
+                                    <h3 class="text-2xl text-blue-500 font-bold">> Kontak</h3>
+                                    <p class="mt-1 text-gray-600 text-xl"><i class='bx bxl-gmail text-red-500' ></i> Email: sinergiglobalsertifikasi@gmail.com</p>
+                                    <p class="mt-1 text-gray-600 text-xl"><i class='bx bxl-whatsapp text-green-500'></i> Whatsapp: 081280007675</p>
                                 </div>
                             </div>
                         </div>
@@ -656,5 +656,6 @@
         <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
         <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
     </body>
 </html>

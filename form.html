@@ -16,7 +16,7 @@
         <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 
         <!-- Webpage Title -->
-        <title>Sinergi Global Sertifikasi | Konsultasi</title>
+        <title>Sinergi Global Sertifikasi | Pengisian form</title>
 
         <!-- Styles -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -79,6 +79,7 @@
             </script>
         </div>
 
+
          <!-- Navigation -->
          <nav class="navbar fixed-top ">
             <div class="sm:px-10 flex flex-wrap items-center justify-between lg:flex-nowrap border-b pb-2">
@@ -94,7 +95,7 @@
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                         <li>
-                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4 " href="index.html">Beranda</a>
+                            <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4 " href="#beranda">Beranda</a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll text-2xl md:text-base hover:text-orange py-10 p-5 md:px-6 md:py-4" href="tentang.html">Tentang</a>
@@ -127,104 +128,54 @@
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
 
-        <!-- home -->
-        <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
-            <div class=" absolute top-0 left-0 w-full h-full overflow-hidden">
-               <img src="images/certification.jpeg" class="min-w-full min-h-full absolute object-cover" style="filter: brightness(50%);" alt="">
-            </div>
-            <div class="space-y-2 z-10">
-                <h3 class="font-semibold text-2xl text-white md:text-4xl">Layanan</h3>
-                <h1 class="font-bold text-4xl text-white bg-blue-500 md:text-6xl px-5 rounded-md">Sertifikasi</h1>
-                <p class="font-semibold text-white underline md:text-xl">PT SINERGI GLOBAL SERTIFIKASI</p>
-            </div>
-        </section>
-        <!-- home  -->
-
-        <!-- heading -->
-        <section class="py-24 bg-gray-100">
-            <div class="m-5">
-                <h1 class="mb-4 text-2xl font-bold leading-snug text-gray-900 md:text-4xl dark:text-white">Layanan <mark class="px-2 text-white bg-blue-500 ">sertifikasi</mark> PT SINERGI GLOBAL SERTIFIKASI</h1>
-                <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                    PT SINERGI GLOBAL SERTIFIKASI, sebagai lembaga sertifikasi terkemuka, hadir untuk membantu perusahaan Anda dalam membuktikan komitmennya terhadap kualitas, lingkungan, keselamatan dan kesehatan kerja, tanggung jawab sosial, serta kepatuhan terhadap ketentuan nasional dan internasional.</p>
-            </div>
-        </section>
-        <!-- heading -->
 
         <!-- content -->
-        <section class="py-24">
-            <h1 class="mb-4 m-4 text-2xl font-bold leading-snug text-gray-900 md:text-4xl dark:text-white">Produk layanan sertifikasi</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-6 text-lg font-extrabold">
-                <a 
-                    class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200">
-                    ⁠Sertifikasi ISO Series
-                    <div class="text-gray-500 font-thin text-sm pt-1">
-                        <span>Semua jenis ISO</span>
+            <section class="py-16 md:px-5 max-w-md mx-auto">
+                <div class="m-5">
+                    <h1 class="text-2xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-blue-500  dark:text-gray-200">
+                        Pengisian Form Layanan Konsultasi
+                    </h1>
+                </div>
+                <form action="https://formsubmit.co/laluiman468@gmail.com" method="POST">
+                    <div class="container px-5">
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama lengkap</label>
+                            <input type="name" name="name" class="bg-gray-50 border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="Nama lengkap" />
+                          </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Anda</label>
+                            <input type="email" name="email" class="bg-gray-50 border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="email@example.com" />
+                          </div>
+                          <div class="mb-5">
+                            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+                            <input type="number" name="number" class="bg-gray-50 border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="+62" />
+                          </div>
+                          <div class="mb-5">
+                            <label for="jenis layanan" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih jenis konsultasi</label>
+                            <select name="jenis layanan" class="bg-gray-50 border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option value="" selected disabled hidden>Pilih di sini</option>
+                                <option>ISO Series</option>
+                                <option>CE Marking</option>
+                                <option>SNI</option>
+                                <option>TKDN</option>
+                                <option>NKV</option>
+                            </select>
+                          </div>
+                          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Isi pesan anda</label>
+                            <textarea name="message" rows="6" class="block p-2.5 border border-blue-500 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 resize-none" placeholder="Isi pesan anda"></textarea>
+
+                            <div class="text-center m-7">
+                                <button type="submit" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Kirim form</button>
+                            </div>
                     </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    CE Marking
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Conformite Europene</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    SNI
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Standardisasi Nasional</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    TKDN
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Tingkat Komponen Dalam Negeri</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    SBU
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Sertifikat Badan Usaha</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    SKK
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Sertifikat Kompetensi Kerja</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    SIUPKK
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Surat Izin Usaha Perusahaan Keagenan Kapal</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    NKV
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Sertifikasi Nomor Kontrol Veteriner</span>
-                    </div>
-                </a>
-                <a class="bg-gray-100  text-black text-xl md:text-2xl border-l-8 border-blue-500 rounded-md px-3 py-2 w-full  transition-all hover:bg-gray-200"
-                    >
-                    NIB
-                    <div class="text-gray-500 font-thin text-sm">
-                        <span>Nomor Induk Berusaha</span>
-                    </div>
-                </a>
-            </div>
+                </form>
+
+                <hr>
             <div class="text-center m-5">
-                <a href="https://wa.me/6281280007675?text=Halo SGS, saya tertarik lebih jauh terkait jasa sertifikasi" type="button" class="text-white text-xl font-bold bg-blue-500 transition-all hover:bg-green-600 focus:ring-4 focus:ring-blue-300 rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Chat via Whatsapp <i class='bx bxl-whatsapp' style='color:#ffffff'></i></a>
+                <a href="https://wa.me/6281280007675?text=Halo SGS, saya tertarik lebih jauh terkait jasa sertifikasi" type="button" class="text-white bg-blue-500 transition-all hover:bg-green-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Chat via Whatsapp <i class='bx bxl-whatsapp' style='color:#ffffff'></i></a>
             </div>
-        </section>
+            </section>
         <!-- content -->
-
-
 
         <!-- Footer -->
         <footer class="w-full">
